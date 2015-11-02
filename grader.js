@@ -64,6 +64,22 @@ var grader = {
     } else
       return ((list[list.length / 2 - 1] + list[list.length / 2]) / 2);
   },
+  modeGrade: function(arr) {
+    if (this.arrayCheck(arr) || !(Array.isArray(arr))) {
+      return false;
+    }
+    var freq = {};
+    for (var item in arr) {
+      if (freq[arr[item]] === undefined) {
+        freq[arr[item]] = 0;
+      }
+      freq[arr[item]] += 1;
+    }
+    var orderresults = Object.keys(freq).sort(function(a, b) {
+      return freq[b] - freq[a];
+    });
+    return parseInt(orderresults[0]);
+  }
 };
 
 module.exports = grader;

@@ -153,4 +153,26 @@ describe('median', function() {
    var expectedMedian = false;
    expect(grader.medianGrade(95)).toBe(expectedMedian);
  });
+ });
+describe('mode', function() {
+ it("Function returns mode Grade from an array", function() {
+   var expectedMd = 16;
+   expect(grader.modeGrade([19, 16, 16, 14, 10])).toBe(expectedMd);
+ });
+ it("Function returns mode Grade from an array", function() {
+   var expectedMd = 54;
+   expect(grader.modeGrade([59, 56, 56, 54, 54, 50])).toBe(expectedMd);
+ });
+ it("Function returns mode Grade from an array", function() {
+   var expectedMd = false;
+   expect(grader.modeGrade('Salt Test')).toBe(expectedMd);
+ });
+ it("Function returns mode Grade from an array", function() {
+   var expectedMd = 74;
+   expect(grader.modeGrade([79, 76, '76', 74, 74, 70])).toBe(expectedMd);
+ });
+ it("Function returns mode Grade from an array", function() {
+   var expectedMd = false;
+   expect(grader.modeGrade(42)).toBe(expectedMd);
+ });
 });
