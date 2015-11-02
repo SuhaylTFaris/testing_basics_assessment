@@ -85,8 +85,20 @@ describe('grader', function() {
    var expectedGrade = 'B-';
    expect(grader.letterGrade(80)).toBe(expectedGrade);
  });
-  it("Function letterGrader returns proper letter grade", function() {
+ it("Function letterGrader returns proper letter grade", function() {
    var expectedGrade = 'C+';
    expect(grader.letterGrade(78)).toBe(expectedGrade);
+ });
+  it("Function letterGrader returns proper letter grade", function() {
+   var expectedGrade = 'D';
+   expect(grader.letterGrade(65)).toBe(expectedGrade);
+ });
+ it("Function letterGrader returns proper letter grade", function() {
+   var expectedGrade = 'F';
+   expect(grader.letterGrade(50)).toBe(expectedGrade);
+ });
+ it("Function letterGrader returns proper letter grade", function() {
+   var expectedGrade = 'F';
+   expect(grader.letterGrade(15)).toBe(expectedGrade);
  });
 });
