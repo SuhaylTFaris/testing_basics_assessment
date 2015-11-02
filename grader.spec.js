@@ -156,23 +156,23 @@ describe('median', function() {
  });
 describe('mode', function() {
  it("Function returns mode Grade from an array", function() {
-   var expectedMd = 16;
-   expect(grader.modeGrade([19, 16, 16, 14, 10])).toBe(expectedMd);
+   var expectedMode = 16;
+   expect(grader.modeGrade([19, 16, 16, 14, 10])).toBe(expectedMode);
  });
  it("Function returns mode Grade from an array", function() {
-   var expectedMd = 54;
-   expect(grader.modeGrade([59, 56, 56, 54, 54, 50])).toBe(expectedMd);
+   var expectedMode = 54;
+   expect(grader.modeGrade([59, 56, 56, 54, 54, 50])).toBe(expectedMode);
  });
  it("Function returns mode Grade from an array", function() {
-   var expectedMd = false;
-   expect(grader.modeGrade('Salt Test')).toBe(expectedMd);
+   var expectedMode = false;
+   expect(grader.modeGrade('Salt Test')).toBe(expectedMode);
  });
  it("Function returns mode Grade from an array", function() {
-   var expectedMd = 74;
-   expect(grader.modeGrade([79, 76, '76', 74, 74, 70])).toBe(expectedMd);
+   var expectedMode = 74;
+   expect(grader.modeGrade([79, 76, '76', 74, 74, 70])).toBe(expectedMode);
  });
  it("Function returns mode Grade from an array", function() {
-   var expectedMd = false;
-   expect(grader.modeGrade(42)).toBe(expectedMd);
+   var expectedMode = false;
+   expect(grader.modeGrade(42)).toBe(expectedMode);
  });
 });
