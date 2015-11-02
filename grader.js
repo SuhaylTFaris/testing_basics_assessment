@@ -51,7 +51,19 @@ var grader = {
       results += arr[item];
     }
     return results / arr.length;
-  }
+   },
+  medianGrade: function(list) {
+    if (this.arrayCheck(list) || !(Array.isArray(list))) {
+      return false;
+    }
+    list.sort(function sortNumber(a, b) {
+      return b - a;
+    });
+    if (list.length % 2 !== 0) {
+      return list[((list.length + 1) / 2) - 1];
+    } else
+      return ((list[list.length / 2 - 1] + list[list.length / 2]) / 2);
+  },
 };
 
 module.exports = grader;

@@ -136,3 +136,21 @@ describe('average', function() {
    expect(grader.averageGrade(95)).toBe(expectedAvg);
  });
 });
+describe('median', function() {
+ it("Function returns median Grade from an array", function() {
+   var expectedMedian = 35;
+   expect(grader.medianGrade([39, 36, 34, 30])).toBe(expectedMedian);
+ });
+ it("Function returns median Grade from an array", function() {
+   var expectedMedian = 65;
+   expect(grader.medianGrade([69, 65, 60])).toBe(expectedMedian);
+ });
+ it("Function returns median Grade from an array", function() {
+   var expectedMedian = false;
+   expect(grader.medianGrade(['What?', 95, 90])).toBe(expectedMedian);
+ });
+ it("Function returns median Grade from an array", function() {
+   var expectedMedian = false;
+   expect(grader.medianGrade(95)).toBe(expectedMedian);
+ });
+});
