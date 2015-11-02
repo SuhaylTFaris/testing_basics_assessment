@@ -101,4 +101,24 @@ describe('grader', function() {
    var expectedGrade = 'F';
    expect(grader.letterGrade(15)).toBe(expectedGrade);
  });
+ it("Function letterGrader returns proper letter grade", function() {
+   var expectedGrade = 'F';
+   expect(grader.letterGrade(0)).toBe(expectedGrade);
+ });
+ it("Function letterGrader returns proper letter grade", function() {
+   var expectedGrade = false;
+   expect(grader.letterGrade(151)).toBe(expectedGrade);
+ });
+ it("Function letterGrader returns proper letter grade", function() {
+   var expectedGrade = false;
+   expect(grader.letterGrade('string')).toBe(expectedGrade);
+ });
+ it("Function letterGrader returns proper letter grade", function() {
+   var expectedGrade = false;
+   expect(grader.letterGrade({})).toBe(expectedGrade);
+ });
+ it("Function letterGrader returns proper letter grade", function() {
+   var expectedGrade = false;
+   expect(grader.letterGrade([])).toBe(expectedGrade);
+ });
 });
