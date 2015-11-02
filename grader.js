@@ -40,6 +40,17 @@ var grader = {
       return 'D' + plusminus();
     }
     return 'F';
+  },
+
+  averageGrade: function(arr) {
+    if (this.arrayCheck(arr) || !(Array.isArray(arr))) {
+      return false;
+    }
+    var results = 0;
+    for (var item in arr) {
+      results += arr[item];
+    }
+    return results / arr.length;
   }
 };
 

@@ -122,3 +122,17 @@ describe('grader', function() {
    expect(grader.letterGrade([])).toBe(expectedGrade);
  });
 });
+describe('average', function() {
+ it("Function returns average Grade from an array", function() {
+   var expectedAvg = 75;
+   expect(grader.averageGrade([80, 75, 70])).toBe(expectedAvg);
+ });
+ it("Function returns average Grade from an array", function() {
+   var expectedAvg = false;
+   expect(grader.averageGrade(['Michael', 15, "Hakase"])).toBe(expectedAvg);
+ });
+ it("Function returns average Grade from an array", function() {
+   var expectedAvg = false;
+   expect(grader.averageGrade(95)).toBe(expectedAvg);
+ });
+});
