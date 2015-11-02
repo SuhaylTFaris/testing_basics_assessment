@@ -33,6 +33,9 @@ var grader = {
     if (score >= 80) {
       return 'B' + plusminus();
     }
+    if (score >= 70) {
+      return 'C' + plusminus();
+    }
   }
 };
 
